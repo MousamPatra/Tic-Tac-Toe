@@ -21,16 +21,19 @@ class MainActivity : AppCompatActivity(), MainDelegate {
         controller = GameController(this)
     }
 
+    // Upon a player's click on any cell
     override fun playerTap(view: View) {
         image = view as ImageView
         val tappedImage = image.tag.toString().toInt()
         controller.handleCellClick(tappedImage)
     }
 
+    // Upon a player's click on reset button
     override fun startNewRound(view: View) {
         controller.gameReset()
     }
 
+    // Apply color change and animation when placing 'X' or 'O' in a cell
     override fun setCell(drawableResId: Int, color: Int) {
         image.translationY = -1000f
         val drawable = ContextCompat.getDrawable(this, drawableResId)
@@ -40,11 +43,13 @@ class MainActivity : AppCompatActivity(), MainDelegate {
         image.animate().translationYBy(1000f).duration = 100
     }
 
+    // Update the status text bar with the provided message
     override fun setStatus(statusMessage: String) {
         val status = findViewById<TextView>(R.id.status)
         status.text = statusMessage
     }
 
+    // Resetting all UI components to their initial state after a game concludes or when the reset button is pressed
     override fun gameResetUI() {
         val imageViews = arrayOf(
             R.id.imageView0, R.id.imageView1, R.id.imageView2,

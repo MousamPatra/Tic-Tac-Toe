@@ -10,9 +10,11 @@ class GameController(
     private val model: GameModel = GameModel()
 
     private var gameActive = true
+
+    // Player representation    0 - X   1 - O
     private var activePlayer = 0
 
-
+    // Manage the entire flow when a player clicks on any cell
     fun handleCellClick(tappedImage: Int){
         if (!gameActive) {
             gameReset()
@@ -34,12 +36,14 @@ class GameController(
         drawCheck()
     }
 
+    // Check if any player has won
     private fun winnerCheck() {
         for (winPosition in model.winPositions) {
             if (model.gameState[winPosition[0]] == model.gameState[winPosition[1]] &&
                 model.gameState[winPosition[1]] == model.gameState[winPosition[2]] &&
                 model.gameState[winPosition[0]] != 2
             ) {
+                // Somebody has won - Find out who!
                 gameActive = false
                 val winnerStr: String = if (model.gameState[winPosition[0]] == 0) {
                     "X has won!! ♛"
@@ -51,6 +55,7 @@ class GameController(
         }
     }
 
+    // Condition to check for match draw
     private fun drawCheck(){
         val containsTwo = model.gameState.contains(2)
         if(!containsTwo && gameActive) {
@@ -59,6 +64,7 @@ class GameController(
         }
     }
 
+    //Game reset logic
     fun gameReset(){
         gameActive = true
         activePlayer = 0
