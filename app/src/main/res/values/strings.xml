@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="heading">Unleash Your Winning Moves Here!</string>
+    <string name="status">"Ready to Play? X's Move!"</string>
+    <string name="reset_btn">RESET</string>
+
+    <string name="grid">3x3 grid</string>
+    <string name="cell">Cell for x or o</string>
+    <string name="o_s_turn_tap_to_play">O\'s Turn - Tap to play</string>
+    <string name="x_s_turn_tap_to_play">X\'s Turn - Tap to play</string>
+</resources>

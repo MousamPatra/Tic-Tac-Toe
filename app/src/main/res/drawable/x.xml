@@ -1,0 +1,12 @@
+<!-- Drawable for X shape -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="21"
+        android:pathData="M20,20L100,100M100,20L20,100" />
+</vector>

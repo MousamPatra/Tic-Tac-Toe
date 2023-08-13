@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background_color">#000000</color> <!-- Cosmic Dark Blue/Black -->
+    <color name="text_welcome">#00BFA5</color> <!-- Earthy Blue-Green -->
+    <color name="cell_blank_color">#FFD700</color> <!-- Saturn's Pale Yellow -->
+    <color name="cell_fill_color_x">#FF5733</color> <!-- Martian Red -->
+    <color name="cell_fill_color_o">#FFA500</color> <!-- Venusian Orange -->
+    <color name="text_status">#C0C0C0</color> <!-- Silver/White for Stars and Moon -->
+    <color name="btn_color">#4763FF</color> <!-- Neptune Blue -->
+    <color name="grid_color">#00BFFF</color> <!-- Uranus Turquoise -->
+
+<!--    <color name="background_color">#0B0B2B</color> &lt;!&ndash; Galactic Deep Blue &ndash;&gt;-->
+<!--    <color name="text_welcome">#0A84FF</color> &lt;!&ndash; Nebula Cyan &ndash;&gt;-->
+<!--    <color name="cell_blank_color">#100D37</color> &lt;!&ndash; Dark Nebula Purple &ndash;&gt;-->
+<!--    <color name="cell_fill_color_x">#FFD700</color> &lt;!&ndash; Solar Flare Gold &ndash;&gt;-->
+<!--    <color name="cell_fill_color_o">#E63946</color> &lt;!&ndash; Red Dwarf Red &ndash;&gt;-->
+<!--    <color name="text_status">#A4A4A4</color> &lt;!&ndash; Star Gray &ndash;&gt;-->
+<!--    <color name="btn_color">#00C9A7</color> &lt;!&ndash; Cosmic Teal &ndash;&gt;-->
+<!--    <color name="grid_color">#2E294E</color> &lt;!&ndash; Celestial Indigo &ndash;&gt;-->
+</resources>

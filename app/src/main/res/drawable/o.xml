@@ -1,0 +1,13 @@
+<!-- Drawable for O shape -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="7"
+        android:fillColor="#00000000"
+        android:pathData="M24,6c-9.94,0-18,8.06-18,18s8.06,18,18,18s18,-8.06,18,-18s-8.06,-18,-18,-18z" />
+</vector>
